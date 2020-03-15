@@ -19,7 +19,15 @@ app.post('/party', (req, res) => {
 });
 
 app.get('/party/:id', (req, res) => {
-  res.render('party', { title: 'Page événement' });
+  axios
+    .get(`${process.env.API_URL}/party/${req.params.id}`)
+    .then(({ data }) =>
+      res.render('party', {
+        party: data,
+        title: data.name,
+      }),
+    )
+    .catch((err) => console.log(err));
 });
 
 app.listen(process.env.PORT, () =>
