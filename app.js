@@ -18,6 +18,10 @@ app.post('/party', (req, res) => {
     .catch((err) => console.error(err));
 });
 
+app.get('/party/:id', (req, res) => {
+  res.render('party', { title: 'Page événement' });
+});
+
 app.listen(process.env.PORT, () =>
   console.log(`Front app listening on port ${process.env.PORT}!`),
 );
