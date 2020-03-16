@@ -271,7 +271,7 @@ npm install body-parser --save
 Importez le dans l'application :
 
 ```
-const bodyParser = require('body-parser')`;
+const bodyParser = require('body-parser');
 ```
 
 Enfin, utilisez le avant la définition des routes :
