@@ -4,8 +4,9 @@
   "description": "Ce TP vous guidera dans la mise en place d'une application en _Server Side Rendering_ : les pages seront générées par le serveur Node lors de la requête.",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently --kill-others \"npm run sass\" \"nodemon app.js\"",
-    "sass": "node-sass styles/style.scss public/style.css -w --output-style compressed"
+    "start": "concurrently --kill-others \"npm run sass\" \"npm run watchify\" \"nodemon app.js\"",
+    "sass": "node-sass styles/style.scss public/style.css -w --output-style compressed",
+    "watchify": "watchify scripts/test.js -o public/script.js"
   },
   "keywords": [],
   "author": "",
@@ -17,8 +18,9 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "node-sass": "^4.13.1",
     "concurrently": "^5.1.0",
-    "nodemon": "^2.0.2"
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2",
+    "watchify": "^3.11.1"
   }
 }
