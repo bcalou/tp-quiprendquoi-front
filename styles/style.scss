@@ -1,9 +1,15 @@
 @import 'vendors/reset.scss';
 
-form {
-  border: 1px solid blue;
+body {
+  padding: 1em;
+}
 
-  div {
-    border: 1px solid red;
-  }
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin-bottom: 0.5em;
 }
