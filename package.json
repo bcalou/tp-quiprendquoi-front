@@ -4,7 +4,8 @@
   "description": "Ce TP vous guidera dans la mise en place d'une application en _Server Side Rendering_ : les pages seront générées par le serveur Node lors de la requête.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "sass": "node-sass styles/style.scss public/style.css -w --output-style compressed"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,7 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "node-sass": "^4.13.1",
     "nodemon": "^2.0.2"
   }
 }
