@@ -1,5 +1,9 @@
 @import 'vendors/reset.scss';
 
+@import 'config/medias.scss';
+
+@import 'blocs/newParty.scss';
+
 body {
   padding: 1em;
 }
