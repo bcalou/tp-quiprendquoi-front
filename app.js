@@ -25,6 +25,7 @@ app.get('/party/:id', (req, res) => {
       res.render('party', {
         party: data,
         title: data.name,
+        url: `${process.env.FRONT_URL}:${process.env.PORT}/party/${data._id}`,
       }),
     )
     .catch((err) => console.log(err));
