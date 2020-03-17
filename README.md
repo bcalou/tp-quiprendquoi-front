@@ -15,7 +15,7 @@ L'application à réaliser est un "qui prend quoi" : un utilisateur créé un é
 
 ### Jour 1 - [This is for everyone](doc/01_this_is_for_everyone.md)
 
-### Jour 2 - Move fast, don't break things
+### Jour 2 - [Move fast, don't break things](doc/02_move_fast_dont_break_things.md)
 
 ### Jour 3 - All the right vitamins
 
