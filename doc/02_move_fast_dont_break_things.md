@@ -286,7 +286,7 @@ Dans le JS, vous pouvez tester le support de l'API _clipboard_ simplement :
 if (navigator.clipboard) {
   console.log("Support du presse papier")
 } else {
-  console.warn("Pas de support :(")
+  console.warn("Pas de support")
 }
 ```
 
