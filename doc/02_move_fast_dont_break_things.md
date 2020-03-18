@@ -212,6 +212,14 @@ Pour le prendre en compte également, dans le script `watchify`, remplacer `scri
 
 Relancez `npm run start` : les deux fichiers sont maintenant rassemblés dans le fichier final (et les deux résultats sont visibles dans la console).
 
+Si votre environnement n'apprécie pas cette syntaxe, vous devrez précisez un par un les fichiers concernés.
+
+```
+"watchify": "watchify scripts/test.js scripts/other.js -o public/script.js"
+```
+
+Attention donc, si c'est votre cas, à modifier le script quand vous ajoutez un nouveau fichier.
+
 ## 24 - Optimiser le JavaScript
 
 `babelify` va nous permettre d'appliquer des transformations sur le JavaScript.
@@ -335,7 +343,7 @@ function copyToClipboard($clipboardEl, $button) {
 }
 ```
 
-Un clic sur le bouton doit désormais déclancher le `console.log`.
+Un clic sur le bouton doit désormais déclencher le `console.log`.
 
 Voici comment effectuer la copie :
 
@@ -358,6 +366,8 @@ setTimeout(() => ($button.innerHTML = 'Copier'), 2000);
 Testez : cliquez puis collez là valeur quelque part.
 
 L'**amélioration progressive** nous permet de garantir un fonctionnement en cas de présence du bouton, sans bug pour les navigateurs incompatibles.
+
+_Note : sur mobile, l'API de clipboard et celle de partage sont limitées aux sites "de confiance", par exemple en HTTPS. Pour le localhost, la technique du [Port Forwarding](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server?hl=fr) est à privilégier._
 
 ## 28 - L'API de partage
 

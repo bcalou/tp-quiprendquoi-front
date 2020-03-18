@@ -17,7 +17,7 @@ L'application à réaliser est un "qui prend quoi" : un utilisateur créé un é
 
 ### Jour 2 - [Move fast, don't break things](doc/02_move_fast_dont_break_things.md)
 
-### Jour 3 - All the right vitamins
+### Jour 3 - [All the right vitamins](doc/03_all_the_right_vitamins.md)
 
 ## Liens
 
